@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Rubik+Spray+Paint&display=swap');
+
+
+/*variables colores*/
+:root{
+    --color-body: #b6cbce;
+    --color-heading: #dbddf3;
+    --color-base: #033f47;             
+    --color-base2: #1f2d38;         
+    --color-brand: #e0f780;             
+    --color-brand2: #deff58;            
+    --font-base: "Roboto Slab";
+}
+
+div {
+    background-color: var(--color-base2);
+    color:var(--color-body);
+    font-family: var(--font-base), sans-serif;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-brand2);
+    font-weight: 700;
+}
+
+.row{
+    padding: 40px;
+}

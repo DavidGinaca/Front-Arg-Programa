@@ -1,0 +1,39 @@
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#LogoAp{
+    width: 100px;
+}
+
+  .btn{
+    padding: 6px 6px;
+    font-weight: 300;    
+    margin: 5px;
+    
+} 
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+} 
+
+#imgGit{
+    width: 20px;
+}
