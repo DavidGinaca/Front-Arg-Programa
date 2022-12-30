@@ -1,0 +1,16 @@
+.contenedor{
+    width: auto;
+}
+
+.parte1, .parte2{
+  
+    text-align: justify;
+    padding: 20px;
+}
+
+
+
+.img-proyecto{
+    box-shadow: 10px 10px 5px var(--color-brand);
+    vertical-align: top;
+}
