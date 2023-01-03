@@ -1,7 +1,11 @@
-import { HttpEvent, HttpHandler, HttpRequest } from "@angular/common/http";
+import { HttpEvent, HttpHandler, HttpRequest, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { TokenService } from "./token.service";
 
+@Injectable({
+    providedIn: 'root'
+})
 export class InterceptorService {
 
 
@@ -19,4 +23,8 @@ export class InterceptorService {
     }
 }
 
-export const 
+export const interceptorProvider = [{
+    provider: HTTP_INTERCEPTORS,
+    useClass: InterceptorService,
+    multi: true
+}];

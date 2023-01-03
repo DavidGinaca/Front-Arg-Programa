@@ -13,7 +13,7 @@
     --font-base: "Roboto Slab";
 }
 
-div {
+div,tr {
     background-color: var(--color-base2);
     color:var(--color-body);
     font-family: var(--font-base), sans-serif;
