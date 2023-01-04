@@ -21,6 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { interceptorProvider } from './servicios/interceptor-service';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
+import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
 
 
 
@@ -39,7 +41,9 @@ import { EditExperienciaComponent } from './componentes/experiencia/edit-experie
     HomeComponent,
     LoginComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent
   ],
   imports: [
     BrowserModule,

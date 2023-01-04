@@ -1,42 +1,31 @@
 <div class="row">
     <h1>Educación</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11"><br><br><br>
-        <ul>
-            <li>
-                <h3>Titulo 1</h3>  
-                <h5>establecimiento</h5>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe incidunt a, necessitatibus soluta animi consectetur sit! Dolorem dicta dolorum quae laborum. Velit aspernatur sequi accusamus, cum officia in earum tempore.
-            </p>
-        </ul>
-        <ul>
-            <li>
-                <h3>Titulo 2</h3> 
-                <h5>establecimiento</h5>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe incidunt a, necessitatibus soluta animi consectetur sit! Dolorem dicta dolorum quae laborum. Velit aspernatur sequi accusamus, cum officia in earum tempore.
-            </p>
-        </ul>
-        <ul>
-            <li>
-                <h3>Titulo 3</h3>
-                <h5>establecimiento</h5>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe incidunt a, necessitatibus soluta animi consectetur sit! Dolorem dicta dolorum quae laborum. Velit aspernatur sequi accusamus, cum officia in earum tempore.
-            </p>
-        </ul>
-        <ul>
-            <li>
-                <h3>Titulo 4</h3>
-                <h5>establecimiento</h5>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe incidunt a, necessitatibus soluta animi consectetur sit! Dolorem dicta dolorum quae laborum. Velit aspernatur sequi accusamus, cum officia in earum tempore.
-            </p>
-        </ul>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-brand btn-warning" routerLink="/nuevaedu" *ngIf="isLogged">
+            Nueva Educación
+        </button>
     </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h5>{{Educacion.nombreE}}</h5>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-brand btn-success" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil"></i> Editar</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-brand btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash"></i> Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
