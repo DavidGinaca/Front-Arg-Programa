@@ -23,6 +23,10 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
 import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -43,7 +47,8 @@ import { EditeducacionComponent } from './componentes/educacion/editeducacion.co
     NewExperienciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
-    EditeducacionComponent
+    EditeducacionComponent,
+    EditAcercaDeComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +56,9 @@ import { EditeducacionComponent } from './componentes/educacion/editeducacion.co
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule,    
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),    
      
   ],
   providers: [

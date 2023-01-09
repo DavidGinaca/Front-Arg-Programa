@@ -1,9 +1,9 @@
 <div class="row">
-    <h1>Educación</h1>
+    <h1>Educación</h1><br><br><br>
     <div class="col-lg-2">
         <button type="button" class="btn btn-brand btn-warning" routerLink="/nuevaedu" *ngIf="isLogged">
             Nueva Educación
-        </button>
+        </button><br><br>
     </div>
 
     <div class="col lg 1"></div>
@@ -12,7 +12,7 @@
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
                     <td>
-                        <h5>{{Educacion.nombreE}}</h5>
+                        <h6>{{Educacion.nombreE}}</h6>
                     </td>
                     <td>{{Educacion.descripcionE}}</td>
                     <td *ngIf="isLogged">
