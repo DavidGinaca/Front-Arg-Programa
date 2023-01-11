@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Experiencia } from '../model/experiencia';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SExperienciaService {
 
-  URL= 'https://back-portfolio-springboot.onrender.com/'
+  URL = environment.URL + 'explab/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{

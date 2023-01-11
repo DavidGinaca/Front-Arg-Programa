@@ -12,7 +12,9 @@ export const environment = {
     authDomain: 'front-portfolio-7cfaf.firebaseapp.com',
     messagingSenderId: '483527446843',
   },
-  production: false
+  production: false,
+  URL:'http://localhost7070/'
+  
 };
 
 /*
