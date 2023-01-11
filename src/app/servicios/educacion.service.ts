@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-URL= environment.URL + "personas";
+URL= environment.URL + "educacion/";
   constructor(private httpClient : HttpClient) { }
 
   public lista(): Observable<Educacion[]>{
