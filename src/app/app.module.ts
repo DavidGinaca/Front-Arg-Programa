@@ -29,6 +29,8 @@ import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
 import { NewSkillComponent } from './componentes/skills/new-skill.component';
+import { EditproyectoComponent } from './componentes/proyectos/editproyecto.component';
+import { NewproyectoComponent } from './componentes/proyectos/newproyecto.component';
 
 
 
@@ -52,7 +54,9 @@ import { NewSkillComponent } from './componentes/skills/new-skill.component';
     EditeducacionComponent,
     EditAcercaDeComponent,
     EditSkillComponent,
-    NewSkillComponent
+    NewSkillComponent,
+    EditproyectoComponent,
+    NewproyectoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,26 @@
+/*@media screen and (min-width:800px) {
+    .container-fluid {
+        width: 60%;
+        top:20vh;
+        margin: 25%;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+}
+
+.row {
+    margin: .5rem;
+    padding: 1rem;
+}
+
+form {
+    outline: 1px solid rgb(108, 108, 129);
+}
+
+*/
 
 .bg-image-vertical {
     position: relative;
@@ -5,16 +28,16 @@
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto 100%;
-    }
+}
 
-    .btn-brand:hover{
+.btn-brand:hover{
         background-color: var(--color-brand2);
         color: var(--color-base);
         border-color: var(--color-brand2);
-    }
+}
     
-    .btn-brand:focus{
+.btn-brand:focus{
         background-color: var(--color-brand2);
         color: var(--color-base);
         border-color: var(--color-brand2);
-    } 
+} 
